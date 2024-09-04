@@ -33,9 +33,12 @@ export default function Description({ colorBg, InstrumentName, InstrumentDetails
                 <div id="SecondRightLook" className='flex flex-col md:w-1/2 gap-4  '>
                     <h1 className='text-yellow-500 text-3xl font-bold lg:text-4xl'>{SecondInstrumentName}</h1>
                     <p className='text-yellow-200 font-medium xl:text-xl'>{SecondInstrumentDetails}</p>
-                    <button className=" bg-yellow-500 active:bg-yellow-600  border-2 border-white text-black font-medium py-1 px-5 xl:px-7 text-lg xl:py-2">
-                        Explore More
-                    </button>
+                    <a href="/instruments" className='bg-yellow-500 active:bg-yellow-600  border-2 border-white text-black font-medium py-1 px-5 xl:px-7 text-lg xl:py-2 text-center'>
+                        <button className="">
+                            Explore More
+                        </button>
+                    </a>
+
                 </div>
             </div>
         </div>

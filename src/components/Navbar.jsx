@@ -2,6 +2,7 @@ import React from 'react'
 // import HamburgerMenuIcon from "./HamburgerMenuIcon";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { FaHome, FaGuitar, FaMusic, FaInfoCircle } from 'react-icons/fa'; // Importing icons
+import { Link } from 'react-router-dom'; // Add this import
 
 export default function Navbar() {
     return (
@@ -32,11 +33,15 @@ export default function Navbar() {
                         <ul className='flex  font-medium sm:space-x-5 md:space-x-8 lg:space-x-9 xl:space-x-10 2xl:space-x-11'>
                             <li className=' cursor-pointer flex items-center '>
                                 <FaHome className='mr-2 text-yellow-500 sm:mx-1 md:mx-2 lg:mx-3 xl:mx-4 2xl:mx-4' />
-                                <span className='hover:text-yellow-500 transition duration-300'>Home</span>
+                                <Link to="/">
+                                    <span className='hover:text-yellow-500 transition duration-300'>Home</span>
+                                </Link>
                             </li>
                             <li className=' cursor-pointer flex items-center '>
                                 <FaGuitar className='mr-2 text-yellow-500 sm:mx-1 md:mx-2 lg:mx-3 xl:mx-4 2xl:mx-4' />
-                                <span className='hover:text-yellow-500 transition duration-300'>Instruments</span>
+                                <Link to="/instruments">
+                                    <span className='hover:text-yellow-500 transition duration-300'>Instruments</span>
+                                </Link>
                             </li>
                             <li className=' cursor-pointer flex items-center'>
                                 <FaMusic className='mr-2 text-yellow-500 sm:mx-1 md:mx-2 lg:mx-3 xl:mx-4 2xl:mx-4' />
